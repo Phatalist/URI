@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB30B243-1229-4B91-8575-52571C15652E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WidthrawApi</RootNamespace>
+    <AssemblyName>WidthrawApi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="xNet" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="HitBtcApi" />
+    <Reference Include="Bittrex.Net" />
+    <Reference Include="BitfinexApi" />
+    <Reference Include="Binance.API.Csharp.Client" />
+    <Reference Include="Binance.API.Csharp.Client.Models" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="Binance.API.Csharp.Client.Domain" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="JSONObject.cs" />
+    <Compile Include="JSONObjectEnumer.cs" />
+    <Compile Include="ProcessedByFody.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widhdraw_app\MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Widhdraw_app\MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widhdraw_app\Program.cs" />
+    <Compile Include="Widhdraw_app\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Widhdraw_app\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Widhdraw_app\TradesAPI\Currency.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\ExchangerBase.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Binance\BinanceAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Bitfinex\BitfinexAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Bittrex\BittrexAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Cryptopia\CryptopiaAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Cryptopia\Datum.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Cryptopia\RootObjectBalance.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Cryptopia\RootObjectWidthdraw.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Exmo\Balances.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Exmo\BalancesResult.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Exmo\ExmoAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Exmo\Reserved.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Exmo\RootObjectWidth.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Hitbtc\HitbtcAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Livecoin\LivecoinAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Livecoin\RootObjectCoin.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Livecoin\RootObjectLiveCoin.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Livecoin\RootObjectLiveError.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Poloniex\PoloniexAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Poloniex\RootObject.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Yobit\Return.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Yobit\ReturnWidthdraw.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Yobit\Rights.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Yobit\RootObject.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Yobit\RootObjectWidthdraw.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Exchangers\Yobit\YobitAPI.cs" />
+    <Compile Include="Widhdraw_app\TradesAPI\Helpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\binance\api\csharp\client\dll.compressed" />
+    <EmbeddedResource Include="Costura\binance\api\csharp\client\domain\dll.compressed" />
+    <EmbeddedResource Include="Costura\binance\api\csharp\client\models\dll.compressed" />
+    <EmbeddedResource Include="Costura\bitfinexapi\dll.compressed" />
+    <EmbeddedResource Include="Costura\bitfinexapi\pdb.compressed" />
+    <EmbeddedResource Include="Costura\bittrex\net\dll.compressed" />
+    <EmbeddedResource Include="Costura\hitbtcapi\dll.compressed" />
+    <EmbeddedResource Include="Costura\hitbtcapi\pdb.compressed" />
+    <EmbeddedResource Include="Costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="Costura\restsharp\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\valuetuple\dll.compressed" />
+    <EmbeddedResource Include="Costura\websocket-sharp\dll.compressed" />
+    <EmbeddedResource Include="Costura\xnet\dll.compressed" />
+    <EmbeddedResource Include="Widhdraw_app\MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widhdraw_app\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Widhdraw_app\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
